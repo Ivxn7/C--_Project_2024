@@ -1,0 +1,6 @@
+Ivanlee,P1001,Hachi,Bulldog,12
+Ivanlee,P1002,Beego,Bulldog,12
+Ivanlee,P1003,Jubs,Bulldog,12
+i,P1004,hi,hi,10
+i,P1005,i,i,1
+i,P1006,i,i,10
