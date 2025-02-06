@@ -4,3 +4,8 @@ Ivanlee,P1003,Jubs,Bulldog,12
 i,P1004,hi,hi,10
 i,P1005,i,i,1
 i,P1006,i,i,10
+i,P1007,i,i,10
+i,P1008,i,i,20
+i,P1009,j,j,10
+i,P1010,j,British short hair,10
+i,P1011,k,q,10
