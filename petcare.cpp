@@ -73,9 +73,9 @@ void ownerMenu(string userid) {
     }
 }
 
-const string User::USER_FILE = "users.txt";
-const string showSchedule::SCHEDULE_FILE = "schedule.txt";
-const string Pets::PET_FILE = "pets.txt";
+const string User::USER_FILE = "./data/users.txt";
+const string showSchedule::SCHEDULE_FILE = "./data/schedule.txt";
+const string Pets::PET_FILE = "./data/pets.txt";
 
 int main(){
     string u_id;
