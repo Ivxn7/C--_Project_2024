@@ -3,9 +3,6 @@
 #include "pet.h"
 #include "schedule.h"
 
-
-
-
 void vetMenu(string userid) {
 
     while (true){
@@ -16,7 +13,11 @@ void vetMenu(string userid) {
             << "4. Logout\n"
             << "Choice: ";
             int choice;
-            cin >> choice;
+            while (!(cin >> choice)){
+                cout << "\nInvalid input! Please try again: ";
+                cin.clear();
+                cin.ignore(numeric_limits<streamsize>::max(), '\n');
+            }
             string id;
 
             switch (choice){
@@ -35,7 +36,6 @@ void vetMenu(string userid) {
                     cout << "Logging out..."<< endl;
                     return; 
             }
-
     }
 }
 
@@ -49,7 +49,11 @@ void ownerMenu(string userid) {
             << "5. Logout\n"
             << "Choice: ";
             int choice;
-            cin >> choice;
+            while (!(cin >> choice)){
+                cout << "\nInvalid input! Please try again: ";
+                cin.clear();
+                cin.ignore(numeric_limits<streamsize>::max(), '\n');
+            }
 
             switch (choice){
                 case 1:
@@ -89,7 +93,7 @@ int main(){
              << "3. Exit\n"
              << "Choice: ";
         while (!(cin >> choice)){
-            cout << "\nInvalid input: ";
+            cout << "\nInvalid input! Please try again: ";
             cin.clear();
             cin.ignore(numeric_limits<streamsize>::max(), '\n');
         }
@@ -116,7 +120,6 @@ int main(){
                         cout<< "\nHELLO OWNER: "<<users.userid<<endl;
                         ownerMenu(users.userid);
                         break;
-
                     }
                 }
                 else {

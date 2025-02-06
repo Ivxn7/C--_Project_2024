@@ -155,15 +155,14 @@ void Pets::search_func(string const& id){
                 }
             }
             for (const auto& i : pets){
+                cout << i.pid << "\n";
                 if (i.pid == id){
                     display_one_pet(id);
                     break;
                 }
-                else{
-                    cout << "ID does not exist in database. Try again..."<<endl;
-                    return;
-                }
             }
+            cout << "ID does not exist in database. Try again..."<<endl;
+            return;
         }
         return;   
     }
